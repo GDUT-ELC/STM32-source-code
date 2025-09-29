@@ -87,9 +87,9 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_UART5_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-  HAL_UART_Receive_IT(&huart5, &rx_data, 1);
+  HAL_UART_Receive_IT(&huart1, &rx_data, 1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -99,21 +99,19 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	HAL_UART_Transmit(&huart5, (uint8_t*)"hello world\r\n", strlen("hello world\r\n"), HAL_MAX_DELAY);
-	HAL_Delay(1000);
-//	if(rx_point != 0)
-//	{
-//		int temp = rx_point;
-//		HAL_Delay(1);
-//		
-//		// 如果1ms之后uart_rx_buf中的数据长度不变
-//		// 说明串口不再接收，接收到了完整的数据包
-//		if(temp == rx_point)
-//		{
-//			// 对接收到的数据进行处理
-//			uart_rx_callback();
-//		}
-//	}
+	if(rx_point != 0)
+	{
+		int temp = rx_point;
+		HAL_Delay(1);
+		
+		// 如果1ms之后uart_rx_buf中的数据长度不变
+		// 说明串口不再接收，接收到了完整的数据包
+		if(temp == rx_point)
+		{
+			// 对接收到的数据进行处理
+			uart_rx_callback();
+		}
+	}
   }
   /* USER CODE END 3 */
 }
