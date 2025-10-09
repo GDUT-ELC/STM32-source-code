@@ -4,8 +4,6 @@
 "1-led\gpio.o"
 "1-led\stm32f4xx_it.o"
 "1-led\stm32f4xx_hal_msp.o"
-"1-led\stm32f4xx_hal_tim.o"
-"1-led\stm32f4xx_hal_tim_ex.o"
 "1-led\stm32f4xx_hal_rcc.o"
 "1-led\stm32f4xx_hal_rcc_ex.o"
 "1-led\stm32f4xx_hal_flash.o"
