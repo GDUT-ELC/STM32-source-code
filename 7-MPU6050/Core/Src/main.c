@@ -55,7 +55,6 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint8_t ID;								//定义用于存放ID号的变量
 int16_t AX, AY, AZ, GX, GY, GZ;			//定义用于存放各个数据的变量
 /* USER CODE END 0 */
 

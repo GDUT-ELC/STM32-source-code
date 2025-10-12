@@ -3,7 +3,7 @@
 <title>Static Call Graph - [7-MPU6050\7-MPU6050.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image 7-MPU6050\7-MPU6050.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Mon Sep 29 15:33:32 2025
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Sun Oct 12 23:10:44 2025
 <BR><P>
 <H3>Maximum Stack Usage =        192 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -602,12 +602,12 @@ Global Symbols
 
 <P><STRONG><a name="[8e]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f4xx_hal_gpio.o(i.HAL_GPIO_WritePin))
 <BR><BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WriteData
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WriteCommand
 <LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_w_sda
 <LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_w_scl
 <LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_SPI_SendByte
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_SPI_Init
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WriteData
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WriteCommand
 </UL>
 
 <P><STRONG><a name="[7d]"></a>HAL_GetTick</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f4xx_hal.o(i.HAL_GetTick))
@@ -907,9 +907,9 @@ Global Symbols
 <P><STRONG><a name="[9c]"></a>oled_init</STRONG> (Thumb, 168 bytes, Stack size 8 bytes, oled.o(i.oled_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = oled_init &rArr; oled_clear &rArr; OLED_SetCursor &rArr; OLED_WriteCommand &rArr; OLED_SPI_SendByte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WriteCommand
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_clear
+<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_clear
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_SPI_Init
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WriteCommand
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -927,8 +927,8 @@ Global Symbols
 <P><STRONG><a name="[9e]"></a>oled_showsignednum</STRONG> (Thumb, 88 bytes, Stack size 32 bytes, oled.o(i.oled_showsignednum))
 <BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = oled_showsignednum &rArr; oled_showchar &rArr; OLED_SetCursor &rArr; OLED_WriteCommand &rArr; OLED_SPI_SendByte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Pow
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_showchar
+<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_showchar
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Pow
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
