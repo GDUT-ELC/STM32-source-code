@@ -32,4 +32,4 @@
 5-motor\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 5-motor\main.o: ../Core/Inc/tim.h
 5-motor\main.o: ../Core/Inc/gpio.h
-5-motor\main.o: ..\Bsp\motor.h
+5-motor\main.o: ../Bsp/motor.h

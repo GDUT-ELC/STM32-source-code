@@ -108,6 +108,13 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	distance = hcsr04_getdistance(&HCSR04);
+	  
+	// 超声波模块距离过近会出问题，所以小于2厘米的值直接舍弃
+	if (distance < 2.0f)
+    {
+		distance = 2.0f;
+	}
+	
 	hcsr04_start();
 
 	sprintf(oled_buf, "distance:%d.%d", (int)distance, (int)(distance * 100) % 100);

@@ -96,10 +96,10 @@ int main(void)
     /* USER CODE END WHILE */
 	
     /* USER CODE BEGIN 3 */
-	  buzzer_on();        // 开蜂鸣器
-	  HAL_Delay(1000);    // 延时1秒
-	  buzzer_off();       // 关蜂鸣器
-	  HAL_Delay(1000);    // 延时1秒
+	buzzer_on();        // 开蜂鸣器
+	HAL_Delay(1000);    // 延时1秒
+	buzzer_off();       // 关蜂鸣器
+	HAL_Delay(1000);    // 延时1秒
   }
   /* USER CODE END 3 */
 }

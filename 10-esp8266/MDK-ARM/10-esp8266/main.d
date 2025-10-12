@@ -34,3 +34,4 @@
 10-esp8266\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
 10-esp8266\main.o: ../Core/Inc/usart.h
 10-esp8266\main.o: ../Core/Inc/gpio.h
+10-esp8266\main.o: ../Bsp/esp8266.h

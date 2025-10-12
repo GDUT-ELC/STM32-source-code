@@ -17,12 +17,12 @@ static char esp_buf[200] = {0};
 
 /**
   * @brief： 向ESP8266模块发送数据
-  * @param： txdata - 待发送的数据指针（字符串形式）
+  * @param： 待发送的数据指针（字符串形式）
   * @retval：None
   */
 static void esp8266_write(uint8_t *txdata)
 {
-	HAL_UART_Transmit(&huart1, txdata, strlen((char*)txdata), HAL_MAX_DELAY);
+	HAL_UART_Transmit(&huart5, txdata, strlen((char*)txdata), HAL_MAX_DELAY);
 }
 
 /**
@@ -35,20 +35,16 @@ void esp8266_init(void)
     esp8266_write((uint8_t*)"AT\r\n");
     HAL_Delay(500);
 
-    esp8266_write((uint8_t*)"AT+CWMODE=3\r\n");
+    esp8266_write((uint8_t*)"AT+CWMODE=1\r\n");
     HAL_Delay(500);
 	
 	sprintf(esp_buf, "AT+CWJAP=\"%s\",\"%s\"\r\n", WIFI_NAME, WIFI_PASSWARD);
     esp8266_write((uint8_t*)esp_buf);
-    HAL_Delay(500);
+    HAL_Delay(1500);
 	
-	sprintf(esp_buf, "AT+MQTTUSERCFG=0,1,\"NULL\",\"%s\",\"%s\",0,0,\"\"\r\n", USERNAME, PASSWARD);
+	sprintf(esp_buf, "AT+MQTTUSERCFG=0,1,\"%s\",\"%s\",\"%s\",0,0,\"\"\r\n", CLIENTID, USERNAME, PASSWARD);
     esp8266_write((uint8_t*)esp_buf);
-    HAL_Delay(1000);
-	
-	sprintf(esp_buf, "AT+MQTTCLIENTID=0,\"%s\"\r\n", CLIENTID);
-    esp8266_write((uint8_t*)esp_buf);
-    HAL_Delay(1000);
+	HAL_Delay(1500);
 	
     esp8266_write((uint8_t*)"AT+MQTTCONN=0,\"mqtts.heclouds.com\",1883,1\r\n");
     HAL_Delay(1000);
@@ -64,5 +60,18 @@ void esp8266_init(void)
   */
 void esp8266_pub(char* id, char* devide, char* flag, int value)
 {
-	sprintf(esp_buf, "AT+MQTTPUB=0,\"sys/%s/%s/thing/property/post\",\"{\\\"id\\\":\\\"123\\\"\\,\\\"params\\\":{\\\"%s\\\":{\\\"value\\\":%d\\}}}\",0,0", id, devide, flag, value);
+	sprintf(esp_buf, "AT+MQTTPUB=0,\"$sys/%s/%s/thing/property/post\",\"{\\\"id\\\":\\\"2463878805\\\"\\,\\\"params\\\":{\\\"%s\\\":{\\\"value\\\":%d\\}}}\",0,0\r\n", id, devide, flag, value);
+	esp8266_write((uint8_t*)esp_buf);
+}
+
+/**
+  * @brief： 向 MQTT 服务器订阅属性上报结果主题
+  * @param： 产品ID
+  * @param： 设备名称/设备ID
+  * @retval： None
+  */
+void esp8266_sub(char* id, char* devide)
+{
+	sprintf(esp_buf, "AT+MQTTSUB=0,\"$sys/%s/%s/thing/property/post/reply\",0\r\n", id, devide);
+	esp8266_write((uint8_t*)esp_buf);
 }

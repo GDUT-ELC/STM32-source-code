@@ -87,8 +87,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-  led_red_on();
-  led_blue_on();
+  
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -98,6 +97,20 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	led_red_on();
+    led_blue_off();
+    led_green_off();
+	HAL_Delay(1000);
+	  
+	led_red_off();
+    led_blue_on();
+    led_green_off();
+	HAL_Delay(1000);
+	  
+	led_red_off();
+    led_blue_off();
+    led_green_on();
+	HAL_Delay(1000);
   }
   /* USER CODE END 3 */
 }

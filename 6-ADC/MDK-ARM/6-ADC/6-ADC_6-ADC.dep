@@ -1,7 +1,7 @@
 Dependencies for Project '6-ADC', Target '6-ADC': (DO NOT MODIFY !)
 CompilerVersion: 5060528::V5.06 update 5 (build 528)::ARMCC
-F (startup_stm32f407xx.s)(0x68D944A0)(--cpu Cortex-M4.fp.sp -g --apcs=interwork -I.\RTE\_6-ADC-ID:\keil5\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\keil5\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 541" --pd "STM32F407xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f407xx.lst --xref -o 6-adc\startup_stm32f407xx.o --depend 6-adc\startup_stm32f407xx.d)
-F (../Core/Src/main.c)(0x68D946CA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp-I.\RTE\_6-ADC-ID:\keil5\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\keil5\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="541" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o 6-adc\main.o --omf_browse 6-adc\main.crf --depend 6-adc\main.d)
+F (startup_stm32f407xx.s)(0x68EA6B79)(--cpu Cortex-M4.fp.sp -g --apcs=interwork -I.\RTE\_6-ADC-ID:\keil5\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\keil5\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 541" --pd "STM32F407xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f407xx.lst --xref -o 6-adc\startup_stm32f407xx.o --depend 6-adc\startup_stm32f407xx.d)
+F (../Core/Src/main.c)(0x68EA6B91)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp-I.\RTE\_6-ADC-ID:\keil5\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\keil5\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="541" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o 6-adc\main.o --omf_browse 6-adc\main.crf --depend 6-adc\main.d)
 I (../Core/Inc/main.h)(0x68D946CA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68D81357)
 I (../Core/Inc/stm32f4xx_hal_conf.h)(0x68D94175)
@@ -39,7 +39,7 @@ I (../Core/Inc/adc.h)(0x68D94174)
 I (../Core/Inc/gpio.h)(0x68D94174)
 I (../Bsp/OLED.h)(0x68D8EC83)
 I (../Bsp/OLED_Font.h)(0x68D8EC83)
-F (../Core/Src/gpio.c)(0x68D94174)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp-I.\RTE\_6-ADC-ID:\keil5\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\keil5\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="541" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o 6-adc\gpio.o --omf_browse 6-adc\gpio.crf --depend 6-adc\gpio.d)
+F (../Core/Src/gpio.c)(0x68EA650E)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp-I.\RTE\_6-ADC-ID:\keil5\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\keil5\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="541" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o 6-adc\gpio.o --omf_browse 6-adc\gpio.crf --depend 6-adc\gpio.d)
 I (../Core/Inc/gpio.h)(0x68D94174)
 I (../Core/Inc/main.h)(0x68D946CA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68D81357)
@@ -74,7 +74,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68D81357)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68D81357)
 I (D:\keil5\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (D:\keil5\ARM\ARMCC\include\string.h)(0x588B8344)
-F (../Core/Src/adc.c)(0x68D9449F)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp-I.\RTE\_6-ADC-ID:\keil5\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\keil5\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="541" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o 6-adc\adc.o --omf_browse 6-adc\adc.crf --depend 6-adc\adc.d)
+F (../Core/Src/adc.c)(0x68EA6B78)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp-I.\RTE\_6-ADC-ID:\keil5\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\keil5\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="541" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o 6-adc\adc.o --omf_browse 6-adc\adc.crf --depend 6-adc\adc.d)
 I (../Core/Inc/adc.h)(0x68D94174)
 I (../Core/Inc/main.h)(0x68D946CA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68D81357)

@@ -21,9 +21,9 @@
 #define WIFI_PASSWARD    ""       // wifi密码
 
 // 以下信息需要填入自己的云端信息
-#define USERNAME		""        //用户名
-#define PASSWARD	    ""        //密码
-#define CLIENTID		""        //clientId
+#define USERNAME		 ""       // 用户名
+#define PASSWARD	     ""       // 密码
+#define CLIENTID		 ""       // clientId
 
 void esp8266_init(void);
 

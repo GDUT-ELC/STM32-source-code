@@ -47,18 +47,28 @@ void MX_GPIO_Init(void)
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
+  __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
-  __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOD, BIN2_Pin|BIN1_Pin|AIN2_Pin|AIN1_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOC, BIN2_Pin|BIN1_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : BIN2_Pin BIN1_Pin AIN2_Pin AIN1_Pin */
-  GPIO_InitStruct.Pin = BIN2_Pin|BIN1_Pin|AIN2_Pin|AIN1_Pin;
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOA, AIN1_Pin|AIN2_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pins : BIN2_Pin BIN1_Pin */
+  GPIO_InitStruct.Pin = BIN2_Pin|BIN1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_MEDIUM;
-  HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : AIN1_Pin AIN2_Pin */
+  GPIO_InitStruct.Pin = AIN1_Pin|AIN2_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_MEDIUM;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
 }
 

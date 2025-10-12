@@ -55,8 +55,8 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-int ldr_value = 0;
-float voltage = 0.0f;
+volatile int ldr_value = 0;
+volatile float voltage = 0.0f;
 char oled_buf[20] = {0};
 /* USER CODE END 0 */
 
@@ -92,9 +92,6 @@ int main(void)
   MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
   oled_init();
-  
-  HAL_ADC_Start(&hadc1);
-  HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -106,13 +103,18 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	oled_showstring(1, 1, "ADC test:");
 	oled_showstring(2, 1, "LDR:");
+	
+	HAL_ADC_Start(&hadc1);
+    HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
 	  
 	ldr_value = HAL_ADC_GetValue(&hadc1);
 	voltage = (ldr_value / 4095.0) * 3.3;
-	oled_shownum(2, 5, ldr_value, 4);
 	  
+	oled_shownum(2, 5, ldr_value, 4);
 	sprintf(oled_buf, "voltage:%d.%d", (int)voltage, (int)(voltage * 100) % 100);
 	oled_showstring(3, 1, oled_buf);
+	  
+	HAL_Delay(50);
   }
   /* USER CODE END 3 */
 }
