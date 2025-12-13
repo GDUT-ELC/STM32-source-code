@@ -574,6 +574,11 @@
               <FileType>1</FileType>
               <FilePath>..\Bsp\MPU6050.c</FilePath>
             </File>
+            <File>
+              <FileName>motor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Bsp\motor.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

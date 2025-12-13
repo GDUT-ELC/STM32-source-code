@@ -31,6 +31,7 @@
 #include "adc.h"
 #include "hcsr04.h"
 #include "MPU6050.h"
+#include "motor.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -100,6 +101,7 @@ int main(void)
   MX_GPIO_Init();
   MX_ADC1_Init();
   MX_TIM3_Init();
+  MX_TIM12_Init();
   /* USER CODE BEGIN 2 */
   oled_init();
   MPU6050_Init();
@@ -109,6 +111,12 @@ int main(void)
   HAL_TIM_IC_Start_IT(&htim3, TIM_CHANNEL_2);
   
   hcsr04_start();
+  
+  HAL_TIM_PWM_Start(&htim12, TIM_CHANNEL_1);
+  HAL_TIM_PWM_Start(&htim12, TIM_CHANNEL_2);
+  
+  motor_setspeed1(30);
+  motor_setspeed2(-30);
   /* USER CODE END 2 */
 
   /* Infinite loop */

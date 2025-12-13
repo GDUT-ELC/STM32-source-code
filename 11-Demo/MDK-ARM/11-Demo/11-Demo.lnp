@@ -33,6 +33,7 @@
 "11-demo\oled_font.o"
 "11-demo\iic_soft.o"
 "11-demo\mpu6050.o"
+"11-demo\motor.o"
 --strict --scatter "11-Demo\11-Demo.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

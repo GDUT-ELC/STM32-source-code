@@ -46,3 +46,4 @@
 11-demo\main.o: ../Bsp/MPU6050.h
 11-demo\main.o: ../Bsp/iic_soft.h
 11-demo\main.o: ../Bsp/MPU6050_Reg.h
+11-demo\main.o: ../Bsp/motor.h
