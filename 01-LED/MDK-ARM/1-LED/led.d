@@ -1,31 +1,28 @@
-1-led\led.o: ..\Bsp\led.c
-1-led\led.o: ..\Bsp\led.h
-1-led\led.o: ../Core/Inc/main.h
-1-led\led.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
-1-led\led.o: ../Core/Inc/stm32f4xx_hal_conf.h
-1-led\led.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
-1-led\led.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
-1-led\led.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
-1-led\led.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
-1-led\led.o: ../Drivers/CMSIS/Include/core_cm4.h
-1-led\led.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
-1-led\led.o: ../Drivers/CMSIS/Include/cmsis_version.h
-1-led\led.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
-1-led\led.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
-1-led\led.o: ../Drivers/CMSIS/Include/mpu_armv7.h
-1-led\led.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
-1-led\led.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
-1-led\led.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-1-led\led.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
-1-led\led.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
-1-led\led.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
-1-led\led.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
-1-led\led.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
-1-led\led.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
-1-led\led.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
-1-led\led.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
-1-led\led.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
-1-led\led.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
-1-led\led.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
-1-led\led.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
-1-led\led.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+1-led/led.o: ..\Bsp\led.c ..\Bsp\led.h ..\Core\Inc\main.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
+  ..\Core\Inc\stm32f4xx_hal_conf.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h \
+  ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h \
+  ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h \
+  ..\Drivers\CMSIS\Include\core_cm4.h \
+  D:\Software\Keil5\MDK5.39\ARM\ARMCLANG\include\stdint.h \
+  D:\Working\GDUT_ELC\STM32-source-code\01-LED\Drivers\CMSIS\Include\cmsis_version.h \
+  D:\Working\GDUT_ELC\STM32-source-code\01-LED\Drivers\CMSIS\Include\cmsis_compiler.h \
+  D:\Working\GDUT_ELC\STM32-source-code\01-LED\Drivers\CMSIS\Include\cmsis_armclang.h \
+  D:\Working\GDUT_ELC\STM32-source-code\01-LED\Drivers\CMSIS\Include\mpu_armv7.h \
+  ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
+  D:\Software\Keil5\MDK5.39\ARM\ARMCLANG\include\stddef.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h
