@@ -78,3 +78,5 @@
 ---
 
 *最后更新：2026.02.04*
+
+<span style="font-size: 0.7em; color: #cccccc;"><sup>zephyr</sup></span>
