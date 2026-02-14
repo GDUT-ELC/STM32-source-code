@@ -2,6 +2,10 @@
 
 🚀 **基于 STM32CubeMX + HAL 库的学习代码仓库**
 
+🔗 **项目链接**：
+- **GitHub**: [https://github.com/GDUT-ELC/STM32-source-code](https://github.com/GDUT-ELC/STM32-source-code)
+- **百度网盘**: [https://pan.baidu.com/s/1cPx0L2Fa8IyqJIp1bxSxFQ?pwd=6wsi](https://pan.baidu.com/s/1cPx0L2Fa8IyqJIp1bxSxFQ?pwd=6wsi) (提取码: 6wsi)
+
 ## 📖 项目简介
 
 本仓库汇集了基于 STM32F4 系列（开发板型号：STM32F407VET6）的各种外设驱动与应用示例。所有工程均采用 **STM32CubeMX** 生成初始化代码，**Keil MDK-ARM** 进行开发，使用 **HAL 库** 进行编写。
