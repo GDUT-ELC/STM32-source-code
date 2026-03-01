@@ -3,8 +3,8 @@
 🚀 **基于 STM32CubeMX + HAL 库的学习代码仓库**
 
 🔗 **项目链接**：
-- **GitHub**: [https://github.com/GDUT-ELC/STM32-source-code ](https://github.com/GDUT-ELC/STM32-source-code) 
-- **百度网盘**: [https://pan.baidu.com/s/1cPx0L2Fa8IyqJIp1bxSxFQ?pwd=6wsi](https://pan.baidu.com/s/1cPx0L2Fa8IyqJIp1bxSxFQ?pwd=6wsi)   
+- **GitHub**: [https://github.com/GDUT-ELC/STM32-source-code ](https://github.com/GDUT-ELC/STM32-source-code)
+- **百度网盘**: [https://pan.baidu.com/s/1cPx0L2Fa8IyqJIp1bxSxFQ?pwd=6wsi](https://pan.baidu.com/s/1cPx0L2Fa8IyqJIp1bxSxFQ?pwd=6wsi)
 
 ## 📖 项目简介
 
