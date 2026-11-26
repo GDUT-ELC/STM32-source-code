@@ -1,3 +1,6 @@
+<!--
+ * @Author: fsj
+-->
 # STM32-LinkNode 外设学习工程
 
 基于 STM32F407VET6、STM32CubeMX 和 HAL 库的外设学习代码，使用 Keil MDK-ARM 开发。当前目录包含 12 个编号工程、一个额外的 Flash 实验工程及硬件资料；每个编号工程的使用方法和注意事项见其 README。
@@ -18,10 +21,8 @@
 | [10-esp8266](10-esp8266/README.md) | UART5 发送 WiFi/MQTT AT 指令 |
 | [11-Demo](11-Demo/README.md) | 11 个测试页，综合外设验证及姿态角演示 |
 | [12-gd25qdemo](12-gd25qdemo/README.md) | GD25Q80C 外部 Flash 读写与 OLED 校验 |
-| [epprom](epprom/README_Flash.md) | 额外的 GD25Q80C Flash 实验工程，目录名保留；实际器件为 NOR Flash |
 | [Hardware](Hardware/) | 扩展板与核心板原理图、STM32F407VET6 数据手册、STM32F4xx 中文参考手册 |
 | `.vscode/` | 编辑器配置 |
-| [all.md](all.md) | 本 README 与 12 个编号工程 README 的全文汇总 |
 
 ## 使用方法
 
@@ -44,4 +45,4 @@
 - 本次清理范围为 01–12 号工程的编译产物、生成日志、反汇编输出及 Keil 用户界面缓存。源码、`.ioc`、`.uvprojx`、`.uvoptx`、启动文件、调试配置、HAL/CMSIS 库、测试及备份均保留，`epprom/` 和 `Hardware/` 保持原内容。
 - 后续编译生成的目标文件、固件、映射文件等可再次清理；不要将库目录中的预编译 `.lib`、`.a` 当作编译垃圾删除。首次运行前以源码中的当前参数为准，并完成实物验证。
 
-仓库来源：[GDUT-ELC/STM32-source-code](https://github.com/GDUT-ELC/STM32-source-code)。
+仓库来源：[GDUT-ELC/STM32-source-code/2026-STM32-source-code](https://github.com/GDUT-ELC/STM32-source-code/2026-STM32-source-code)。
